@@ -46,7 +46,11 @@ module.exports = {
     new HtmlWebpackPlugin({ template: 'src/index.html', favicon:  'src/favicon.ico' }),
 
     // use Purge CSS to filter out unused styles to reduce the CSS bundle size
-    new PurgecssPlugin({paths: ['src/index.html'], extractors: [{extractor: CustomExtractor, extensions: ['css', 'html']}]})
+    new PurgecssPlugin({
+      paths: ['src/index.html'], 
+      extractors: [{extractor: CustomExtractor, extensions: ['css', 'html']}],
+      whitelistPatterns: [/burger-menu-open/]  // whitelist classes that are applied at runtime in the js
+    })
 
   ]
 }

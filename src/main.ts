@@ -19,7 +19,6 @@ window.addEventListener('scroll', updateScroll);
 const addUnderline = (span: HTMLElement) => span.style['background-color'] = 'white';
 const removeUnderline = (span: HTMLElement) => span.style['background-color'] = 'unset';
 
-
 const setupButtonHoverListeners = (linkId: string) => {
 	const link: HTMLElement = document.getElementById(linkId);
 	const linkUnderline: HTMLElement = document.getElementById(linkId + 'Underline');
@@ -31,3 +30,13 @@ const ids = [1, 2, 3];
 const headers = ['Fixed', 'Floating'];
 headers.forEach(header => ids.forEach(id => setupButtonHoverListeners(`section${id}Link${header}`)));
 
+
+// ANIMATED BURGER
+const toggleBurgerMenuOpen = (burger: HTMLElement) => burger.classList.toggle('burger-menu-open');
+
+const setupBurgerClickListeners = (burgerId: string) => {
+	const burger = document.getElementById(burgerId);
+	burger.addEventListener('click', () => toggleBurgerMenuOpen(burger));
+}
+
+headers.forEach(header => setupBurgerClickListeners(`burgerMenu${header}`));

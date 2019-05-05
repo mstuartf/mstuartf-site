@@ -10,10 +10,12 @@
   <body>
 
     <div id="floatingHeader" class="fixed h-0 w-full overflow-hidden bg-pink smooth-header flex justify-between px-4">
+      <!-- LOGO -->
       <div class="h-full flex items-center">
         <h2 class="text-white">mstuartf</h2>
       </div>
-      <div class="h-full flex items-center">
+      <!-- WEB LINKS -->
+      <div class="h-full items-center hidden md:flex">
         <a id="section1LinkFloating" data-scroll href="#section1" class="text-white no-underline mr-4">
           about
           <span id="section1LinkFloatingUnderline" class="block h-1 line-under color-inherit"></span>
@@ -27,15 +29,25 @@
           <span id="section3LinkFloatingUnderline" class="block h-1 line-under color-inherit"></span>
         </a>
       </div>
+      <!-- MOBILE BURGER -->
+      <div class="h-full items-center flex md:hidden">
+        <div id="burgerMenuFloating" class="burger-menu">
+          <span class="bg-white"></span>
+          <span class="bg-white"></span>
+          <span class="bg-white"></span>
+        </div>
+      </div>
     </div>
 
 
     <!-- SECTION 1 -->
     <div id="section1" class="h-header w-full bg-brand-red flex justify-between px-4">
+      <!-- LOGO -->
       <div class="h-full flex items-center">
         <h2 class="text-white">mstuartf</h2>
       </div>
-      <div class="h-full flex items-center">
+      <!-- WEB LINKS -->
+      <div class="h-full items-center hidden md:flex">
         <a id="section1LinkFixed" data-scroll href="#section1" class="text-white no-underline mr-4">
           about
           <span id="section1LinkFixedUnderline" class="block h-1 line-under color-inherit"></span>
@@ -48,6 +60,15 @@
           contact
           <span id="section3LinkFixedUnderline" class="block h-1 line-under color-inherit"></span>
         </a>
+      </div>
+      <!-- MOBILE BURGER -->
+      <div class="h-full items-center flex md:hidden">
+        <div id="burgerMenuFixed" class="burger-menu">
+          <span class="bg-white"></span>
+          <span class="bg-white"></span>
+          <span class="bg-white"></span>
+        </div>
+      </div>
       </div>
     </div>
 
