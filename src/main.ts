@@ -1,10 +1,13 @@
 // IMAGES
 import './assets/logo.png';
 
+const sectionIds = [1, 2, 3];
+const headers = ['Fixed', 'Floating', 'MobileDropdown'];
+const navLinkSelector = 'a[href*="#"]';
 
 // SMOOTH SCROLLING
 const SmoothScroll = require('smooth-scroll');
-var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});
+var scroll = new SmoothScroll(navLinkSelector, {speed: 1000});
 
 
 // FLOATING HEADER
@@ -26,17 +29,29 @@ const setupButtonHoverListeners = (linkId: string) => {
 	link.addEventListener('mouseleave', () => removeUnderline(linkUnderline));
 }
 
-const ids = [1, 2, 3];
-const headers = ['Fixed', 'Floating'];
-headers.forEach(header => ids.forEach(id => setupButtonHoverListeners(`section${id}Link${header}`)));
+headers.forEach(header => sectionIds.forEach(id => setupButtonHoverListeners(`section${id}Link${header}`)));
 
 
 // ANIMATED BURGER
-const toggleBurgerMenuOpen = (burger: HTMLElement) => burger.classList.toggle('burger-menu-open');
+let burgerOpen = false;
+const mobileMenu = document.getElementById('mobileMenu');
+
+const toggleBurgerMenuOpen = () => {
+	headers.forEach(header => {
+		const burger = document.getElementById(`burgerMenu${header}`);
+		burger.classList.toggle('burger-menu-open');
+	});
+	mobileMenu.classList.toggle('h-full');
+	burgerOpen = !burgerOpen;
+};
 
 const setupBurgerClickListeners = (burgerId: string) => {
 	const burger = document.getElementById(burgerId);
-	burger.addEventListener('click', () => toggleBurgerMenuOpen(burger));
+	burger.addEventListener('click', () => toggleBurgerMenuOpen());
 }
 
 headers.forEach(header => setupBurgerClickListeners(`burgerMenu${header}`));
+
+// mobile dropdown should always close when they click a link
+const allLinks = document.querySelectorAll(navLinkSelector);
+allLinks.forEach(link => link.addEventListener('click', () => burgerOpen && toggleBurgerMenuOpen()));

@@ -9,6 +9,53 @@
 
   <body>
 
+    <!-- MOBILE MENU DROP-DOWN -->
+    <div id="mobileMenu" class="w-full bg-white fixed smooth-header overflow-hidden z-50 h-0">
+      
+      <div class="h-header w-full flex justify-between px-4">
+
+        <!-- LOGO -->
+        <div class="h-full flex items-center">
+          <h2 class="text-brand-red">mstuartf</h2>
+        </div>
+
+        <!-- BURGER -->
+        <div class="h-full items-center flex">
+          <div id="burgerMenuMobileDropdown" class="burger-menu">
+            <span class="bg-brand-red"></span>
+            <span class="bg-brand-red"></span>
+            <span class="bg-brand-red"></span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex items-center justify-center h-section w-full">
+        <div class="flex-col items-center justify-center">
+          <div class="p-4 text-center">
+            <a id="section1LinkMobileDropdown" data-scroll href="#section1" class="text-2xl text-brand-red no-underline font-bold">
+              about
+              <span id="section1LinkMobileDropdownUnderline" class="block h-1 line-under color-inherit"></span>
+            </a>
+          </div>
+          <div class="p-4 text-center">
+            <a id="section2LinkMobileDropdown" data-scroll href="#section2" class="text-2xl text-brand-red no-underline font-bold">
+              portfolio
+              <span id="section2LinkMobileDropdownUnderline" class="block h-1 line-under color-inherit"></span>
+            </a>
+          </div>
+          <div class="p-4 text-center">
+            <a id="section3LinkMobileDropdown" data-scroll href="#section3" class="text-2xl text-brand-red no-underline font-bold">
+              contact
+              <span id="section3LinkMobileDropdownUnderline" class="block h-1 line-under color-inherit"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FLOATING HEADER -->
     <div id="floatingHeader" class="fixed h-0 w-full overflow-hidden bg-pink smooth-header flex justify-between px-4">
       <!-- LOGO -->
       <div class="h-full flex items-center">
@@ -38,7 +85,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- SECTION 1 -->
     <div id="section1" class="h-header w-full bg-brand-red flex justify-between px-4">
