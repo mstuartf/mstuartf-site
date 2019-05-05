@@ -1,0 +1,18 @@
+@tailwind preflight;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+.smooth-header {
+    transition: height 0.4s;
+}
+
+.line-under {
+    transition: all 0.4s;
+}
+
+.color-inherit {
+    color: inherit;
+}
