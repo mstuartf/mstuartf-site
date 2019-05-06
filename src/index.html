@@ -10,42 +10,42 @@
   <body>
 
     <!-- MOBILE MENU DROP-DOWN -->
-    <div id="mobileMenu" class="w-full bg-white fixed smooth-header overflow-hidden z-50 h-0">
+    <div id="mobileMenu" class="w-full bg-brand-darker fixed smooth-header overflow-hidden z-50 h-0">
       
       <div class="h-header w-full flex justify-between px-4">
 
         <!-- LOGO -->
         <div class="h-full flex items-center">
-          <h2 class="text-brand-red">mstuartf</h2>
+          <h2 class="text-white">mstuartf</h2>
         </div>
 
         <!-- BURGER -->
         <div class="h-full items-center flex">
           <div id="burgerMenuMobileDropdown" class="burger-menu">
-            <span class="bg-brand-red"></span>
-            <span class="bg-brand-red"></span>
-            <span class="bg-brand-red"></span>
+            <span class="bg-white"></span>
+            <span class="bg-white"></span>
+            <span class="bg-white"></span>
           </div>
         </div>
 
       </div>
 
-      <div class="flex items-center justify-center h-section w-full">
+      <div class="flex items-center justify-center min-h-section w-full">
         <div class="flex-col items-center justify-center">
           <div class="p-4 text-center">
-            <a id="section1LinkMobileDropdown" data-scroll href="#section1" class="text-2xl text-brand-red no-underline font-bold">
+            <a id="section1LinkMobileDropdown" data-scroll href="#section1" class="text-2xl text-white no-underline font-bold">
               about
               <span id="section1LinkMobileDropdownUnderline" class="block h-1 line-under color-inherit"></span>
             </a>
           </div>
           <div class="p-4 text-center">
-            <a id="section2LinkMobileDropdown" data-scroll href="#section2" class="text-2xl text-brand-red no-underline font-bold">
-              portfolio
+            <a id="section2LinkMobileDropdown" data-scroll href="#section2" class="text-2xl text-white no-underline font-bold">
+              projects
               <span id="section2LinkMobileDropdownUnderline" class="block h-1 line-under color-inherit"></span>
             </a>
           </div>
           <div class="p-4 text-center">
-            <a id="section3LinkMobileDropdown" data-scroll href="#section3" class="text-2xl text-brand-red no-underline font-bold">
+            <a id="section3LinkMobileDropdown" data-scroll href="#section3" class="text-2xl text-white no-underline font-bold">
               contact
               <span id="section3LinkMobileDropdownUnderline" class="block h-1 line-under color-inherit"></span>
             </a>
@@ -56,22 +56,22 @@
     </div>
 
     <!-- FLOATING HEADER -->
-    <div id="floatingHeader" class="fixed h-0 w-full overflow-hidden bg-pink smooth-header flex justify-between px-4">
+    <div id="floatingHeader" class="fixed h-0 w-full overflow-hidden bg-brand-darker smooth-header flex justify-between px-4">
       <!-- LOGO -->
       <div class="h-full flex items-center">
         <h2 class="text-white">mstuartf</h2>
       </div>
       <!-- WEB LINKS -->
       <div class="h-full items-center hidden md:flex">
-        <a id="section1LinkFloating" data-scroll href="#section1" class="text-white no-underline mr-4">
+        <a id="section1LinkFloating" data-scroll href="#section1" class="text-white no-underline mr-4 font-bold">
           about
           <span id="section1LinkFloatingUnderline" class="block h-1 line-under color-inherit"></span>
         </a>
-        <a id="section2LinkFloating" data-scroll href="#section2" class="text-white no-underline mr-4">
-          portfolio
+        <a id="section2LinkFloating" data-scroll href="#section2" class="text-white no-underline mr-4 font-bold">
+          projects
           <span id="section2LinkFloatingUnderline" class="block h-1 line-under color-inherit"></span>
         </a>
-        <a id="section3LinkFloating" data-scroll href="#section3" class="text-white no-underline mr-4">
+        <a id="section3LinkFloating" data-scroll href="#section3" class="text-white no-underline mr-4 font-bold">
           contact
           <span id="section3LinkFloatingUnderline" class="block h-1 line-under color-inherit"></span>
         </a>
@@ -87,22 +87,22 @@
     </div>
 
     <!-- SECTION 1 -->
-    <div id="section1" class="h-header w-full bg-brand-red flex justify-between px-4">
+    <div id="section1" class="h-header w-full bg-brand flex justify-between px-4">
       <!-- LOGO -->
       <div class="h-full flex items-center">
         <h2 class="text-white">mstuartf</h2>
       </div>
       <!-- WEB LINKS -->
       <div class="h-full items-center hidden md:flex">
-        <a id="section1LinkFixed" data-scroll href="#section1" class="text-white no-underline mr-4">
+        <a id="section1LinkFixed" data-scroll href="#section1" class="text-white no-underline mr-4 font-bold">
           about
           <span id="section1LinkFixedUnderline" class="block h-1 line-under color-inherit"></span>
         </a>
-        <a id="section2LinkFixed" data-scroll href="#section2" class="text-white no-underline mr-4">
-          portfolio
+        <a id="section2LinkFixed" data-scroll href="#section2" class="text-white no-underline mr-4 font-bold">
+          projects
           <span id="section2LinkFixedUnderline" class="block h-1 line-under color-inherit"></span>
         </a>
-        <a id="section3LinkFixed" data-scroll href="#section3" class="text-white no-underline mr-4">
+        <a id="section3LinkFixed" data-scroll href="#section3" class="text-white no-underline mr-4 font-bold">
           contact
           <span id="section3LinkFixedUnderline" class="block h-1 line-under color-inherit"></span>
         </a>
@@ -119,7 +119,7 @@
     </div>
 
 
-    <div class="flex items-center justify-center h-section w-full bg-brand-red">
+    <div class="flex items-center justify-center h-section w-full bg-brand">
 
       <div class="h-1/2 md:w-1/2 text-center p-4">
 
@@ -132,7 +132,7 @@
         </div>
 
         <div class="py-2">
-          <p class="text-white">
+          <p class="text-white font-bold">
             Built using Typescript, Tailwind, PurgeCSS, CSSNano, and Webpack.
           </p>
         </div>
@@ -146,19 +146,103 @@
       </div>
 
     </div>
-    <div class="h-header w-full bg-brand-red"></div>
+    <div class="h-header w-full bg-brand"></div>
 
     <!-- SECTION 2 -->
-    <div id="section2" class="h-header w-full bg-yellow"></div>
-    <div class="flex items-center justify-center h-section w-full bg-green">
+    <div id="section2" class="h-header w-full bg-brand-lighter"></div>
+
+    <div class="flex items-center justify-center min-h-section w-full bg-brand-lighter p-8">
       
+      <div class="w-full h-full flex flex-col">
+
+        <!-- HEADER ROW -->
+        <div class="w-full p-8 flex justify-center">
+          <div class="flex flex-col items-center text-center">
+            <h1 class="text-3xl md:text-4xl">Recent Projects</h1>
+            <div class="w-1/2 h-2 mt-2 bg-brand-darker"></div>
+          </div>
+        </div>
+  
+        <div class="w-full flex-auto">
+
+          <div class="w-full h-full flex flex-wrap items-start justify-center">
+
+            <div class="flex h-full flex-wrap justify-center">
+              <div class="flex flex-col items-center h-full p-4">
+                <div class="bg-img-1 h-full w-full h-img w-img"></div>
+                <div class="w-img pt-4">
+                  <h3>Bilbo</h1>
+                </div>
+                <div class="w-img pt-4">
+                  Angular 5, WebPack, Angular Material, AWS Cloudfront, S3...
+                </div>
+              </div>
+              <div class="flex flex-col items-center h-full p-4">
+                <div class="bg-img-1 h-full w-full h-img w-img"></div>
+                <div class="w-img pt-4">
+                  <h3>InvoPayer</h1>
+                </div>
+                <div class="w-img pt-4">
+                  AngularJS, Python, Flask, Google Appengine...
+                </div>
+              </div>
+            </div>
+
+            <div class="flex h-full flex-wrap justify-center">
+              <div class="flex flex-col items-center h-full p-4">
+                <div class="bg-img-1 h-full w-full h-img w-img"></div>
+                <div class="w-img pt-4">
+                  <h3>The Music Guy</h1>
+                </div>
+                <div class="w-img pt-4">
+                  VueJS, Webpack, Tailwind CSS...
+                </div>
+              </div>
+              <div class="flex flex-col items-center h-full p-4">
+                <div class="bg-img-1 h-full w-full h-img w-img"></div>
+                <div class="w-img pt-4">
+                  <h3>mstuartf.com</h1>
+                </div>
+                <div class="w-img pt-4">
+                  TypeScript, WebPack, Tailwind, PurgeCSS, CSSNano...
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+
+      </div>
+
     </div>
-    <div class="h-header w-full bg-blue"></div>
+    <div class="h-header w-full bg-brand-lighter"></div>
 
     <!-- SECTION 3 -->
-    <div id="section3" class="h-header w-full bg-yellow"></div>
-    <div class="flex items-center justify-center h-section w-full bg-blue"></div>
-    <div class="h-header w-full bg-blue"></div>
+    <div id="section3" class="h-header w-full bg-brand-light"></div>
+
+    <div class="flex items-center justify-center min-h-section w-full bg-brand-light p-8">
+      
+      <div class="w-full h-full flex flex-col">
+
+        <!-- HEADER ROW -->
+        <div class="w-full p-8 flex justify-center">
+          <div class="flex flex-col items-center text-center">
+            <h1 class="text-3xl md:text-4xl">Contact</h1>
+            <div class="w-1/2 h-2 mt-2 bg-brand-darker"></div>
+          </div>
+        </div>
+  
+        <div class="w-full flex-auto">
+          <div class="w-full h-full flex flex-wrap items-start justify-center">          
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="h-header w-full bg-brand-light"></div>
 
   </body>
 

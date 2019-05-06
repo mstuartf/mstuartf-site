@@ -45,7 +45,11 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
 
-  'brand-red': 'rgba(255, 0, 51, 1)',
+  'brand-lighter': '#FEFFFF',
+  'brand-light': '#DEF2F1',
+  'brand': '#3AAFA9',
+  'brand-dark': '#2B7A78',
+  'brand-darker': '#17252A',
 
   'transparent': 'transparent',
 
@@ -498,6 +502,7 @@ module.exports = {
     '1/6': '16.66667%',
     '5/6': '83.33333%',
     'full': '100%',
+    'img': '200px',
     'screen': '100vw'
   },
 
@@ -538,8 +543,9 @@ module.exports = {
     '1/2': '50%',
     '3/4': '75%',
     'header': '53px',
-    'section': 'calc(100vh - 106px)',
-    'screen': '100vh'
+    'img': '200px',
+    'screen': '100vh',
+    'section': 'calc(100vh - 106px)'
   },
 
 
@@ -579,6 +585,7 @@ module.exports = {
 
   minHeight: {
     '0': '0',
+    'section': 'calc(100vh - 106px)',
     'full': '100%',
     'screen': '100vh'
   },

@@ -1,16 +1,19 @@
-// IMAGES
+// IMAGES ////////////////////////////////////////////////////////////////////////////////////////////////////
 import './assets/logo.png';
 
+
+// GLOBALS ///////////////////////////////////////////////////////////////////////////////////////////////////
 const sectionIds = [1, 2, 3];
 const headers = ['Fixed', 'Floating', 'MobileDropdown'];
 const navLinkSelector = 'a[href*="#"]';
 
-// SMOOTH SCROLLING
+
+// SMOOTH SCROLLING //////////////////////////////////////////////////////////////////////////////////////////
 const SmoothScroll = require('smooth-scroll');
 var scroll = new SmoothScroll(navLinkSelector, {speed: 1000});
 
 
-// FLOATING HEADER
+// FLOATING HEADER ///////////////////////////////////////////////////////////////////////////////////////////
 const floatingHeader = document.getElementById('floatingHeader');
 function updateScroll() {
 	floatingHeader.style.height = window.scrollY > 200 ? '53px' : '0';
@@ -18,7 +21,7 @@ function updateScroll() {
 window.addEventListener('scroll', updateScroll);
 
 
-// HOVER UNDERLINE
+// HOVER UNDERLINE ///////////////////////////////////////////////////////////////////////////////////////////
 const addUnderline = (span: HTMLElement) => span.style['background-color'] = 'white';
 const removeUnderline = (span: HTMLElement) => span.style['background-color'] = 'unset';
 
@@ -32,7 +35,7 @@ const setupButtonHoverListeners = (linkId: string) => {
 headers.forEach(header => sectionIds.forEach(id => setupButtonHoverListeners(`section${id}Link${header}`)));
 
 
-// ANIMATED BURGER
+// ANIMATED BURGER ///////////////////////////////////////////////////////////////////////////////////////////
 let burgerOpen = false;
 const mobileMenu = document.getElementById('mobileMenu');
 

@@ -17,6 +17,20 @@
     color: inherit;
 }
 
+.bg-img-1 {
+  background: url('./assets/logo.png') no-repeat center;
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.row {
+    flex-direction: row;
+}
 
 
 /* BURGER MENU */
