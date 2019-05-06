@@ -111,7 +111,17 @@
   animation-duration: 0.75s;
 }
 
+.delay-250 {
+  animation-delay: .25s;
+}
 
+.delay-500 {
+  animation-delay: .5s;
+}
+
+.delay-750 {
+  animation-delay: .75s;
+}
 
 
 
