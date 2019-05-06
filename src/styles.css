@@ -17,11 +17,29 @@
     color: inherit;
 }
 
+.bg-icon-bolt {
+  background: url('./assets/bolt.png') no-repeat center;
+  background-size: contain;
+}
+
+.bg-icon-bone {
+  background: url('./assets/bone.png') no-repeat center;
+  background-size: contain;
+}
+
+.bg-icon-puzzle {
+  background: url('./assets/puzzle.png') no-repeat center;
+  background-size: contain;
+}
+
+.bg-icon-mobile {
+  background: url('./assets/mobile.png') no-repeat center;
+  background-size: contain;
+}
+
 .bg-img-1 {
   background: url('./assets/logo.png') no-repeat center;
   background-size: contain;
-  height: 200px;
-  width: 200px;
 }
 
 .flex.wrap {
