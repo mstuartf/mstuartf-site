@@ -50,7 +50,7 @@ module.exports = {
       paths: ['src/index.html'], 
       keyframes: true,
       extractors: [{extractor: CustomExtractor, extensions: ['css', 'html']}],
-      whitelistPatterns: [/burger-menu-open/, /customFade/, /fadeIn/]  // whitelist classes that are applied at runtime in the js
+      whitelistPatterns: [/burger-menu-open/, /customFade/, /fadeInUp/, /zoomIn/]  // whitelist classes that are applied at runtime in the js
     })
 
   ]

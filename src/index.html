@@ -264,7 +264,13 @@
         </div>
   
         <div class="w-full flex-auto">
-          <div class="w-full h-full flex flex-wrap items-start justify-center">          
+          <div class="w-full h-full flex justify-center">     
+          <form class="animated view-animate-zoomIn flex flex-col w-full sm:max-w-sm items-center">
+            <input class="p-2 w-full border rounded-sm text-lg" placeholder="Name" type="text" name="name" required>
+            <input class="mt-2 p-2 w-full border rounded-sm text-lg" placeholder="Email address" type="email" name="email" required>
+            <textarea class="min-h-32 mt-2 p-2 no-resize w-full border rounded-sm text-lg" placeholder="Message" type="text" name="message"></textarea>
+            <input class="mt-4 p-2 w-full max-w-32 bg-transparent hover:bg-brand-dark text-brand-dark font-semibold hover:text-white py-2 px-4 border border-brand-dark hover:border-transparent rounded cursor-pointer text-lg" type="submit" id="submit" value="Send">
+          </form>     
           </div>
         </div>
 

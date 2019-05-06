@@ -585,6 +585,7 @@ module.exports = {
 
   minHeight: {
     '0': '0',
+    '32': '8rem',
     'section': 'calc(100vh - 106px)',
     'full': '100%',
     'screen': '100vh'
@@ -607,6 +608,7 @@ module.exports = {
   */
 
   maxWidth: {
+    '32': '8rem',
     '64': '16rem',
     'xs': '20rem',
     'sm': '30rem',
