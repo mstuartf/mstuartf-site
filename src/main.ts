@@ -21,20 +21,6 @@ function updateScroll() {
 window.addEventListener('scroll', updateScroll);
 
 
-// HOVER UNDERLINE ///////////////////////////////////////////////////////////////////////////////////////////
-const addUnderline = (span: HTMLElement) => span.style['background-color'] = 'white';
-const removeUnderline = (span: HTMLElement) => span.style['background-color'] = 'unset';
-
-const setupButtonHoverListeners = (linkId: string) => {
-	const link: HTMLElement = document.getElementById(linkId);
-	const linkUnderline: HTMLElement = document.getElementById(linkId + 'Underline');
-	link.addEventListener('mouseenter', () => addUnderline(linkUnderline));
-	link.addEventListener('mouseleave', () => removeUnderline(linkUnderline));
-}
-
-headers.forEach(header => sectionIds.forEach(id => setupButtonHoverListeners(`section${id}Link${header}`)));
-
-
 // ANIMATED BURGER ///////////////////////////////////////////////////////////////////////////////////////////
 let burgerOpen = false;
 const mobileMenu = document.getElementById('mobileMenu');

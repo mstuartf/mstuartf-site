@@ -50,7 +50,7 @@
   transform: translateY(-5px);
 }
 
-.hover-box h3:before {
+.hover-box h3:before, .hover-link:before {
   content: '';
   position: absolute;
   left: 51%;
@@ -63,7 +63,7 @@
   background-color: white;
 }
 
-.hover-box:hover h3:before {
+.hover-box:hover h3:before, .hover-link:hover:before {
   left: 0;
   right: 0;
 }
@@ -88,7 +88,7 @@
 .burger-menu span {
   display: block;
   position: absolute;
-  height: 6px;
+  height: 4px;
   width: 100%;
   opacity: 1;
   left: 0;
