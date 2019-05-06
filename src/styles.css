@@ -28,6 +28,16 @@
   background-size: contain;
 }
 
+.bg-icon-github {
+  background: url('./assets/github.png') no-repeat center;
+  background-size: contain;
+}
+
+.bg-icon-linkedin {
+  background: url('./assets/linkedin-square.png') no-repeat center;
+  background-size: contain;
+}
+
 .bg-icon-bone {
   background: url('./assets/bone.png') no-repeat center;
   background-size: contain;
