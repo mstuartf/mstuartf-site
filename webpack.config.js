@@ -48,8 +48,9 @@ module.exports = {
     // use Purge CSS to filter out unused styles to reduce the CSS bundle size
     new PurgecssPlugin({
       paths: ['src/index.html'], 
+      keyframes: true,
       extractors: [{extractor: CustomExtractor, extensions: ['css', 'html']}],
-      whitelistPatterns: [/burger-menu-open/]  // whitelist classes that are applied at runtime in the js
+      whitelistPatterns: [/burger-menu-open/, /customFade/]  // whitelist classes that are applied at runtime in the js
     })
 
   ]

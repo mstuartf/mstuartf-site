@@ -17,6 +17,9 @@
     color: inherit;
 }
 
+
+/* ICONS */
+
 .bg-icon-bolt {
   background: url('./assets/bolt.png') no-repeat center;
   background-size: contain;
@@ -46,6 +49,10 @@
   transition: transform 0.4s;
 }
 
+
+/* HOVER ANIMATIONS */
+
+
 .hover-box:hover .bg-icon {
   transform: translateY(-5px);
 }
@@ -67,6 +74,45 @@
   left: 0;
   right: 0;
 }
+
+/* CUSTOM ENTRANCE ANIMATIONS */
+
+@keyframes customFadeLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-400px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.customFadeLeft {
+  animation-name: customFadeLeft;
+  animation-duration: 0.75s;
+}
+
+@keyframes customFadeRight {
+  from {
+    opacity: 0;
+    transform: translate3d(400px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.customFadeRight {
+  animation-name: customFadeRight;
+  animation-duration: 0.75s;
+}
+
+
+
 
 
 /* BURGER MENU */

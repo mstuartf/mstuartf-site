@@ -2,6 +2,10 @@
 import './assets/logo.png';
 
 
+// 3RD-PARTY CSS /////////////////////////////////////////////////////////////////////////////////////////////
+require('animate.css');
+
+
 // GLOBALS ///////////////////////////////////////////////////////////////////////////////////////////////////
 const sectionIds = [1, 2, 3];
 const headers = ['Fixed', 'Floating', 'MobileDropdown'];
@@ -19,6 +23,25 @@ function updateScroll() {
 	floatingHeader.style.height = window.scrollY > 200 ? '53px' : '0';
 }
 window.addEventListener('scroll', updateScroll);
+
+
+// VIEW ANIMATIONS ///////////////////////////////////////////////////////////////////////////////////////////
+const isInView = (element: Element) => {
+	const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+	return element.getBoundingClientRect().top && element.getBoundingClientRect().top < viewportHeight;
+}
+const triggerAnimations = () => {
+	const elements = document.querySelectorAll("[class*=view-animate-]");
+	elements.forEach(element => {
+		if (isInView(element)) {
+			const delayClass = element.classList.value.split(' ').find(cl => cl.startsWith('view-animate-'));
+			const animationClass = delayClass.replace('view-animate-', '');
+			element.classList.add('animated', animationClass);
+			element.classList.remove(delayClass);
+		}
+	})
+}
+window.addEventListener('scroll', triggerAnimations);
 
 
 // ANIMATED BURGER ///////////////////////////////////////////////////////////////////////////////////////////
