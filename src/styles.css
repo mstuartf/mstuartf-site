@@ -42,12 +42,30 @@
   background-size: contain;
 }
 
-.flex.wrap {
-    flex-wrap: wrap;
+.bg-icon {
+  transition: transform 0.4s;
 }
 
-.flex.row {
-    flex-direction: row;
+.hover-box:hover .bg-icon {
+  transform: translateY(-5px);
+}
+
+.hover-box h3:before {
+  content: '';
+  position: absolute;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  height: 1px;
+  transition-property: left, right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  background-color: white;
+}
+
+.hover-box:hover h3:before {
+  left: 0;
+  right: 0;
 }
 
 
