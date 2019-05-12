@@ -543,7 +543,7 @@ module.exports = {
     '1/2': '50%',
     '3/4': '75%',
     'header': '53px',
-    'img': '200px',
+    'img': '133px',
     'screen': '100vh',
     'section': 'calc(100vh - 106px)'
   },

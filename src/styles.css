@@ -9,62 +9,58 @@
     transition: height 0.4s;
 }
 
-.line-under {
-    transition: all 0.4s;
-}
-
-.color-inherit {
-    color: inherit;
-}
-
 .no-resize {
   resize: none;
 }
 
 /* ICONS */
 
-.bg-icon-bolt {
-  background: url('./assets/bolt.png') no-repeat center;
-  background-size: contain;
-}
-
-.bg-icon-github {
-  background: url('./assets/github.png') no-repeat center;
-  background-size: contain;
-}
-
-.bg-icon-linkedin {
-  background: url('./assets/linkedin-square.png') no-repeat center;
-  background-size: contain;
-}
-
-.bg-icon-bone {
-  background: url('./assets/bone.png') no-repeat center;
-  background-size: contain;
-}
-
-.bg-icon-puzzle {
-  background: url('./assets/puzzle.png') no-repeat center;
-  background-size: contain;
-}
-
-.bg-icon-mobile {
-  background: url('./assets/mobile.png') no-repeat center;
-  background-size: contain;
-}
-
-.bg-img-1 {
-  background: url('./assets/logo.png') no-repeat center;
-  background-size: contain;
-}
-
 .bg-icon {
   transition: transform 0.4s;
 }
 
+.bg-icon-bolt {
+  background-image: url('./assets/bolt.png');
+}
+
+.bg-icon-github {
+  background-image: url('./assets/github.png');
+}
+
+.bg-icon-linkedin {
+  background-image: url('./assets/linkedin-square.png');
+}
+
+.bg-icon-bone {
+  background-image: url('./assets/bone.png');
+}
+
+.bg-icon-puzzle {
+  background-image: url('./assets/puzzle.png');
+}
+
+.bg-icon-mobile {
+  background-image: url('./assets/mobile.png');
+}
+
+.bg-img-tmg {
+  background-image: url('./assets/tmg.png');
+}
+
+.bg-img-ip {
+  background-image: url('./assets/ip.png');
+}
+
+.bg-img-mstuartf {
+  background-image: url('./assets/mstuartf.png');
+}
+
+.bg-img-bilbo {
+  background-image: url('./assets/bilbo.png');
+}
+
 
 /* HOVER ANIMATIONS */
-
 
 .hover-box:hover .bg-icon {
   transform: translateY(-5px);
