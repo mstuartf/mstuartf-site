@@ -72,7 +72,7 @@ allLinks.forEach(link => link.addEventListener('click', () => burgerOpen && togg
 // CONTACT FORM //////////////////////////////////////////////////////////////////////////////////////////////
 const contactForm = document.forms['contactForm'];
 const submitButton = <HTMLInputElement> document.getElementById('contactFormButton');
-const contactFormUrl = 'http://numbersapi.com/random/math?min=0&max=20&json';
+const contactFormUrl = 'https://fbz3wd9b0e.execute-api.eu-west-2.amazonaws.com/prod/new_enquiry';
 
 interface ContactPayload {
 	name: string;
@@ -100,6 +100,7 @@ const submitContactForm = () => {
 	const payload = buildPayload();
 	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4) {
+	    	console.log(this.response);
 	       if (this.status == 200) {
 	       	handleSubmitSuccess()
 	       }
@@ -108,8 +109,9 @@ const submitContactForm = () => {
 	       }
 	    }
 	};
-	xhttp.open("GET", contactFormUrl, true);
-	xhttp.send();
+	xhttp.open("POST", contactFormUrl, true);
+	xhttp.setRequestHeader("Content-Type", "application/json");
+	xhttp.send(JSON.stringify(payload));
 }
 
 const wipeForm = () => {
