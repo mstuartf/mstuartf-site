@@ -204,3 +204,35 @@
   transform: rotate(-135deg);
 }
 
+
+/*Loading spinner*/
+
+.ring-spinner div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: white white transparent transparent;
+  animation: ringSpinner 1.2s cubic-bezier(.57,.05,.58,.94) infinite;
+}
+.ring-spinner div:nth-child(1) {
+  animation-delay: -0.25s;
+}
+.ring-spinner div:nth-child(2) {
+  animation-delay: -0.17s;
+}
+.ring-spinner div:nth-child(3) {
+  animation-delay: -0.1s;
+}
+
+@keyframes ringSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

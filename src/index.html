@@ -195,7 +195,7 @@
           <div class="w-16 h-1 mt-2 bg-brand-darker animated view-animate-customFadeRight"></div>
         </div>
   
-        <div class="w-full flex-auto">
+        <div class="w-full">
 
           <div class="w-full h-full flex flex-wrap items-start justify-center">
 
@@ -253,7 +253,7 @@
     <!-- SECTION 3 -->
     <div id="section3" class="h-header w-full bg-brand-darker"></div>
 
-    <div class="flex flex-col items-center justify-center min-h-section w-full bg-brand-darker pt-8">
+    <div class="flex flex-col items-center justify-center min-h-section w-full bg-brand-darker pt-8 relative">
       
       <div class="w-full h-full flex justify-center items-center px-8">
 
@@ -269,11 +269,11 @@
     
           <div class="w-full flex-auto mt-8">
             <div class="w-full h-full flex justify-center">     
-            <form class="flex flex-col w-full sm:max-w-sm items-center">
-              <input class="p-2 w-full border border-white bg-brand-darker text-white rounded-sm text-lg" placeholder="Name" type="text" name="name" required>
-              <input class="mt-2 p-2 w-full border border-white bg-brand-darker text-white rounded-sm text-lg" placeholder="Email address" type="email" name="email" required>
-              <textarea class="min-h-32 mt-2 p-2 no-resize w-full border border-white bg-brand-darker text-white rounded-sm text-lg" placeholder="Message" type="text" name="message"></textarea>
-              <input class="mt-4 p-2 w-full max-w-32 bg-transparent hover:bg-brand-lighter text-brand-lighter font-semibold hover:text-brand-darker py-2 px-4 border border-brand-lighter hover:border-transparent rounded cursor-pointer text-lg" type="submit" id="submit" value="Send">
+            <form id="contactForm" class="flex flex-col w-full sm:max-w-sm items-center">
+              <input id="nameInput" class="p-2 w-full border border-white bg-brand-darker text-white rounded-sm text-lg" placeholder="Name" type="text" name="name" required>
+              <input id="emailInput" class="mt-2 p-2 w-full border border-white bg-brand-darker text-white rounded-sm text-lg" placeholder="Email address" type="email" name="email" required>
+              <textarea id="messageInput" class="min-h-32 mt-2 p-2 no-resize w-full border border-white bg-brand-darker text-white rounded-sm text-lg" placeholder="Message" type="text" name="message"></textarea>
+              <button id="contactFormButton" type="button" class="mt-4 p-2 w-full max-w-32 bg-transparent hover:bg-brand-lighter text-brand-lighter font-semibold hover:text-brand-darker py-2 px-4 border border-brand-lighter hover:border-transparent rounded cursor-pointer text-lg" disabled>Send</button>
             </form>     
             </div>
           </div>
@@ -286,10 +286,39 @@
 
       <div class="w-full flex justify-center">
         
-          <a href="https://www.linkedin.com/in/michael-flood-ba2434102/" target="_blank" class="block lg:hidden animated view-animate-zoomIn h-12 w-12 bg-icon-linkedin mr-2"></a>
+        <a href="https://www.linkedin.com/in/michael-flood-ba2434102/" target="_blank" class="block lg:hidden animated view-animate-zoomIn h-12 w-12 bg-icon-linkedin mr-2"></a>
 
-          <a href="https://github.com/mstuartf" target="_blank" class="block lg:hidden animated view-animate-zoomIn h-12 w-12 bg-icon-github ml-2"></a>
+        <a href="https://github.com/mstuartf" target="_blank" class="block lg:hidden animated view-animate-zoomIn h-12 w-12 bg-icon-github ml-2"></a>
         
+      </div>
+
+      <div id="loadingSpinner" class="absolute pin-t pin-b pin-r pin-l items-center justify-center hidden">
+        <div class="h-16 w-16 relative inline-block ring-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div id="contactPopup" class="absolute pin-t pin-b pin-r pin-l items-center justify-center hidden animated zoomIn p-8">
+        <div class="border border-brand-lighter rounded bg-brand-darker max-w-md">
+          <div class="px-8 py-4 border-b text-white">
+            <h2 id="popupTitle">
+              Error
+            </h2>
+          </div>
+          <div class="px-8 py-4 border-b text-brand-lighter">
+            <p id="popupMessage">
+              Something went wrong. Please try again.
+            </p>
+          </div>
+          <div class="px-8 py-4 flex justify-center">
+            <button id="popupButton" class="w-full max-w-32 bg-transparent hover:bg-brand-lighter text-brand-lighter font-semibold hover:text-brand-darker py-2 px-4 border border-brand-lighter hover:border-transparent rounded cursor-pointer text-lg">
+              OK
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
