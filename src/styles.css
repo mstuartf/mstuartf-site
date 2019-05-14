@@ -13,6 +13,10 @@
   resize: none;
 }
 
+.img-aspect {
+  padding-bottom: 66%;
+}
+
 /* ICONS */
 
 .bg-icon {
