@@ -28,13 +28,13 @@ module.exports = {
       },
 
       {
-          test: /\.(png|jpg|gif|svg)$/,
+          test: /\.(png|jpeg|gif|svg)$/,
           loader: 'file-loader',
           options: { name: '[name].[ext]?[hash]' }
       }
 
     ]
-    
+
   },
 
   plugins: [
@@ -47,7 +47,7 @@ module.exports = {
 
     // use Purge CSS to filter out unused styles to reduce the CSS bundle size
     new PurgecssPlugin({
-      paths: ['src/index.html'], 
+      paths: ['src/index.html'],
       keyframes: true,
       extractors: [{extractor: CustomExtractor, extensions: ['css', 'html']}],
       whitelistPatterns: [/burger-menu-open/, /customFade/, /fadeInUp/, /zoomIn/]  // whitelist classes that are applied at runtime in the js
